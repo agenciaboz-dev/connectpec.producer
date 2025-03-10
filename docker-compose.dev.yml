@@ -1,0 +1,21 @@
+name: startja.dev
+
+services:
+  app:
+    image: agenciaboz/startja:dev
+    container_name: startja.dev
+    ports:
+      - "9081:9081"
+    environment:
+      - PORT=9081
+    networks:
+      - webnet
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 256M
+
+networks:
+  webnet:

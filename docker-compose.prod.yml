@@ -1,0 +1,25 @@
+name: startja
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        API_URL: s://api.startja.boz.app.br
+    image: agenciaboz/startja:latest
+    container_name: startja
+    ports:
+      - "8081:8081"
+    environment:
+      - PORT=8081
+    networks:
+      - webnet
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 256M
+
+networks:
+  webnet:
