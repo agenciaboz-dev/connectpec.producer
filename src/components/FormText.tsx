@@ -64,7 +64,7 @@ export const FormText = React.forwardRef<React.ElementRef<typeof OriginalInput>,
                             ) : props.password ? (
                                 <TextInput.Icon
                                     icon={!hiddenPassword ? "eye-off" : "eye"}
-                                    color={error ? theme.colors.error : colors.error}
+                                    color={error ? theme.colors.error : colors.darkInversePrimary}
                                     onPress={() => setHiddenPassword((value) => !value)}
                                 />
                             ) : error ? (
@@ -96,7 +96,6 @@ export const FormText = React.forwardRef<React.ElementRef<typeof OriginalInput>,
                                       : lodash.get(props.formik.values, props.name) || "")
                         }
                         // @ts-ignore
-
                         onChangeText={
                             ios
                                 ? (value: string) => {
@@ -118,7 +117,6 @@ export const FormText = React.forwardRef<React.ElementRef<typeof OriginalInput>,
                     />
                 }
             />
-
             {error && error_text != " " && <Text style={{ color: theme.colors.error, minHeight: scale(20), fontSize: scale(14) }}>{error_text}</Text>}
         </View>
     )
