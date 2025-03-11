@@ -1,4 +1,6 @@
 import "@expo/metro-runtime"
+import "./global.css"
+
 import { StatusBar } from "expo-status-bar"
 import { Providers } from "./src/Providers"
 import { Routes } from "./src/Routes"
