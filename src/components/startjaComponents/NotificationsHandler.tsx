@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from "react"
 import * as Device from "expo-device"
 import * as Notifications from "expo-notifications"
 import Constants from "expo-constants"
-import { useUser } from "../hooks/useUser"
-import { api } from "../backend/api"
+import { useUser } from "../../hooks/useUser"
+import { api } from "../../backend/api"
 import { NavigationProp, useNavigation } from "@react-navigation/native"
-import { android, mobile } from "../tools/platforms"
+import { android, mobile } from "../../tools/platforms"
 
 interface NotificationsHandlerProps {}
 

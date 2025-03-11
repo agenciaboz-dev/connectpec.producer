@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react"
-import { useUser } from "../hooks/useUser"
-import { useKeepConnected } from "../hooks/useKeepConnected"
+import { useUser } from "../../hooks/useUser"
+import { useKeepConnected } from "../../hooks/useKeepConnected"
 import * as SplashScreen from "expo-splash-screen"
-import { api } from "../backend/api"
+import { api } from "../../backend/api"
 
 interface HandleKeepSessionProps {}
 

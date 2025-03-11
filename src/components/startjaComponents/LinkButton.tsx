@@ -2,9 +2,9 @@ import { useLinkProps } from "@react-navigation/native"
 import React from "react"
 import { TouchableOpacity } from "react-native"
 import { Button, Text } from "react-native-paper"
-import { colors } from "../style/colors"
-import { web } from "../tools/platforms"
-import { scale } from "../tools/scale"
+import { colors } from "../../style/colors"
+import { web } from "../../tools/platforms"
+import { scale } from "../../tools/scale"
 
 interface LinkButtonProps {
     to: string

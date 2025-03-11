@@ -2,7 +2,7 @@ import React from "react"
 import { View, ViewStyle } from "react-native"
 import { Text } from "react-native-paper"
 import { TextInputLabelProp } from "react-native-paper/lib/typescript/components/TextInput/types"
-import { scale } from "../tools/scale"
+import { scale } from "../../tools/scale"
 
 interface LabeledComponentProps {
     label: TextInputLabelProp

@@ -5,9 +5,9 @@ import { FormikErrors, FormikTouched } from "formik"
 import { mask as masked } from "react-native-mask-text"
 import { LabeledComponent } from "./LabeledComponent"
 import lodash from "lodash"
-import { scale } from "../tools/scale"
-import { colors } from "../style/colors"
-import { ios } from "../tools/platforms"
+import { scale } from "../../tools/scale"
+import { colors } from "../../style/colors"
+import { ios } from "../../tools/platforms"
 
 export interface FormTextProps extends TextInputProps {
     name: string

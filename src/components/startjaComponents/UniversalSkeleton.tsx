@@ -1,8 +1,8 @@
 import React from "react"
 import { View } from "react-native"
-import { web } from "../tools/platforms"
+import { web } from "../../tools/platforms"
 import SkeletonPlaceholder from "../Screens/SystemChooser/SkeletonPlaceholderWrapper"
-import { colors } from "../style/colors"
+import { colors } from "../../style/colors"
 import ContentLoader, { Rect } from "react-content-loader/native"
 
 interface UniversalSkeletonProps {

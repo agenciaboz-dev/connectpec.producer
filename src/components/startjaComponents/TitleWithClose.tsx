@@ -1,9 +1,9 @@
 import React, { Dispatch, SetStateAction } from "react"
 import { View } from "react-native"
 import { Icon, IconButton, Text } from "react-native-paper"
-import { mobile, web } from "../tools/platforms"
-import { colors } from "../style/colors"
-import { scale } from "../tools/scale"
+import { mobile, web } from "../../tools/platforms"
+import { colors } from "../../style/colors"
+import { scale } from "../../tools/scale"
 
 interface TitleWithCloseProps {
     onDismiss: () => void

@@ -2,8 +2,8 @@ import { Image } from "expo-image"
 import React from "react"
 import { TouchableOpacity, View } from "react-native"
 import { Text, useTheme } from "react-native-paper"
-import { scale } from "../tools/scale"
-import { web } from "../tools/platforms"
+import { scale } from "../../tools/scale"
+import { web } from "../../tools/platforms"
 
 interface DistributionStoresProps {}
 

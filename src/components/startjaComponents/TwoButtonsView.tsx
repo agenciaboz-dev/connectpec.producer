@@ -1,6 +1,6 @@
 import React from "react"
 import { StyleProp, View, ViewStyle } from "react-native"
-import { mobile } from "../tools/platforms"
+import { mobile } from "../../tools/platforms"
 
 interface TwoButtonsViewProps {
     children?: React.ReactNode

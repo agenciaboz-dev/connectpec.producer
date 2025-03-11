@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from "react-native"
 import { Dropdown } from "react-native-element-dropdown"
 import lodash from "lodash"
 import { TextInputProps } from "react-native-paper"
-import { scale } from "../tools/scale"
-import { FormikBundle } from "../types/FormikBundle"
-import { colors } from "../style/colors"
-import { mobile, web } from "../tools/platforms"
+import { scale } from "../../tools/scale"
+import { FormikBundle } from "../../types/FormikBundle"
+import { colors } from "../../style/colors"
+import { mobile, web } from "../../tools/platforms"
 
 export const dropdown_styles = StyleSheet.create({
     dropdown: {

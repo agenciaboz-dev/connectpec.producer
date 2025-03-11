@@ -1,8 +1,8 @@
 import React from "react"
 import { View } from "react-native"
 import { IconButton, Text } from "react-native-paper"
-import { colors } from "../style/colors"
-import { scale } from "../tools/scale"
+import { colors } from "../../style/colors"
+import { scale } from "../../tools/scale"
 
 interface ModalTitleProps {
     title: string

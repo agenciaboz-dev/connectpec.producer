@@ -1,10 +1,10 @@
 import { ImagePickerAsset, MediaTypeOptions } from "expo-image-picker"
 import React from "react"
 import { Text, TouchableRipple } from "react-native-paper"
-import { colors } from "../style/colors"
-import { pickMedia } from "../tools/pickMedia"
+import { colors } from "../../style/colors"
+import { pickMedia } from "../../tools/pickMedia"
 import { Image } from "expo-image"
-import { scale } from "../tools/scale"
+import { scale } from "../../tools/scale"
 
 interface ProfilePicInputProps {
     onPick: (media: ImagePickerAsset) => void
