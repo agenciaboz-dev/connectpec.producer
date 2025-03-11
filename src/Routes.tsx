@@ -4,7 +4,7 @@ import { default_navigator_options } from "./tools/default_navigator_options"
 import { BackHandler, Dimensions } from "react-native"
 import { useUser } from "./hooks/useUser"
 import { useFocusEffect } from "@react-navigation/native"
-import { Home } from "./Screens/LoginScreen/Home"
+import { Home } from "./Screens/LoginScreen/LoginScreen"
 
 interface RoutesProps {}
 
