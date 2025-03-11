@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Text } from "react-native-paper";
-import { colors } from "../../style/colors"
+import { colors } from "../style/colors"
 
 interface LoginButtonProps {
     onPress: () => void
