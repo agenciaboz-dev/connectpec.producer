@@ -7,8 +7,14 @@ const hexToRgba = (hex: string, alpha: number) => {
 
 export const colors = {
     primary: "#825513",
+    primaryContainer: "#FFDDB7",
+    onPrimaryContainer: "#2A1700",
     secondary: "#715A41",
+    secondaryContainer: "#FCDDBC",
+    onSecondaryContainer: "#281805",
     tertiary: "#54643D",
+    tertiaryContainer: "#D7E9B9",
+    onTertiaryContainer: "#121F02",
     info: "#E8E5AC",
     input: "#825513",
     disabled: "#EEEEEE",
@@ -19,5 +25,7 @@ export const colors = {
     success: "#34A853",
     warning: "#EfB436",
     error: "#BA1A1A",
+    inversePrimary: "#E9BF8E",
+    darkInversePrimary: "#724A2E",
     overlay: hexToRgba("#523226", 0.9),
 }
