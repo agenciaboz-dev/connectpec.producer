@@ -4,9 +4,9 @@ import { NativeStackNavigationProp } from "@react-navigation/native-stack"
 import { HomeStackParams } from "../../Routes"
 import { useNavigation } from "@react-navigation/native"
 import { Image } from "expo-image"
-import { AppInfo } from "../../components/AppInfo"
 import { Button, Text } from "react-native-paper"
 import { colors } from "../../style/colors"
+import { AppInfo } from "../../components/startjaComponents/AppInfo"
 
 interface HomeProps {}
 
