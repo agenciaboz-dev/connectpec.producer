@@ -2,12 +2,11 @@ import React from "react";
 import { Button, Text } from "react-native-paper";
 import { colors } from "../style/colors"
 
-interface LoginButtonProps {
+interface PecButtonProps {
     onPress: () => void
     text: string
     button?: number
 }
-
 
 {
     /* 
@@ -33,7 +32,7 @@ interface LoginButtonProps {
     */
 }
 
-export const LoginButton: React.FC<LoginButtonProps> = ({ onPress, text, button }) => {
+export const PecButton: React.FC<PecButtonProps> = ({ onPress, text, button }) => {
     return (
         <Button
             style={{
