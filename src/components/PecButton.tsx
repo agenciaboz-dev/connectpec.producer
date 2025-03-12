@@ -5,19 +5,19 @@ import { colors } from "../style/colors"
 interface PecButtonProps {
     onPress: () => void
     text: string
-    button?: number
+    buttonType?: number
 }
 
 {
     /* 
-    !A propriedade button define os estilos do botão
-    button === 1
+    !A propriedade buttonType define os estilos do botão
+    buttonType === 1
         backgroundColor: "#E9BF8E" || colors.primaryFixedDIM,
         variant: "labelLarge",
         color: "#281805" || colors.onSecondaryContainer,
         fontWeight: 500
     
-    button === 2
+    buttonType === 2
         backgroundColor: undefined,
         variant: "titleLarge",
         color: "#FCDDBC" || colors.secondaryContainer,
@@ -32,20 +32,20 @@ interface PecButtonProps {
     */
 }
 
-export const PecButton: React.FC<PecButtonProps> = ({ onPress, text, button }) => {
+export const PecButton: React.FC<PecButtonProps> = ({ onPress, text, buttonType }) => {
     return (
         <Button
             style={{
-                backgroundColor: button === 1 ? colors.primaryFixedDIM : button === 2 ? undefined : colors.onPrimaryFixedVariant,
+                backgroundColor: buttonType === 1 ? colors.primaryFixedDIM : buttonType === 2 ? undefined : colors.onPrimaryFixedVariant,
             }}
             labelStyle={{}}
             onPress={onPress}
         >
             <Text
-                variant={button === 1 ? "labelLarge" : button === 2 ? "titleLarge" : "titleMedium"}
+                variant={buttonType === 1 ? "labelLarge" : buttonType === 2 ? "titleLarge" : "titleMedium"}
                 style={{
-                    color: button === 1 ? colors.onSecondaryContainer : button === 2 ? colors.secondaryContainer : colors.onPrimary,
-                    fontWeight: button === 2 ? 700 : 500,
+                    color: buttonType === 1 ? colors.onSecondaryContainer : buttonType === 2 ? colors.secondaryContainer : colors.onPrimary,
+                    fontWeight: buttonType === 2 ? 700 : 500,
                 }}
             >
                 {text}
