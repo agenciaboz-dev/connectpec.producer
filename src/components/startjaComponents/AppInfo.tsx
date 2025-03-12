@@ -1,14 +1,14 @@
 import React from "react"
 import { View } from "react-native"
 import { Text } from "react-native-paper"
-import { colors } from "../style/colors"
 import constants from "expo-constants"
+import { colors } from "../../style/colors"
 
 interface AppInfoProps {
     textColor?: string
 }
 
-export const AppInfo: React.FC<AppInfoProps> = ({ textColor = colors.primary }) => {
+export const AppInfo: React.FC<AppInfoProps> = ({ textColor = colors.secondaryContainer }) => {
     const currentYear = new Date().getFullYear()
 
     return (
@@ -26,10 +26,12 @@ export const AppInfo: React.FC<AppInfoProps> = ({ textColor = colors.primary }) 
                     alignItems: "center",
                 }}
             >
-                <Text style={{ color: textColor, fontSize: 12 }}>
-                    v{constants.expoConfig?.version} © {currentYear} | ConectPec . Todos os direitos reservados
+                <Text variant="bodySmall" style={{ color: textColor, fontWeight: 400, textAlign: "center" }}>
+                    {`v${constants.expoConfig?.version} © ${currentYear} | ConectPec . Todos os direitos reservados \n Designed and powered by BOZ`}
                 </Text>
-                <Text style={{ color: textColor, fontSize: 12 }}>Designed and powered by BOZ</Text>
+                {/* <Text variant="bodySmall" style={{ color: textColor }}>
+                    Designed and powered by BOZ
+                </Text> */}
             </View>
         </View>
     )
