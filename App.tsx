@@ -1,6 +1,4 @@
 import "@expo/metro-runtime"
-import "./global.css"
-
 import { StatusBar } from "expo-status-bar"
 import { Providers } from "./src/Providers"
 import { Routes } from "./src/Routes"
@@ -13,6 +11,8 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context"
 import { UIManager } from "react-native"
 import { android } from "./src/tools/platforms"
 import { url } from "./src/backend/backend"
+
+import "./global.css"
 
 // SplashScreen.preventAutoHideAsync()
 if (android && UIManager.setLayoutAnimationEnabledExperimental) {
