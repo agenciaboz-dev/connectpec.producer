@@ -17,7 +17,7 @@ export const AppInfo: React.FC<AppInfoProps> = ({ textColor = colors.secondaryCo
                 {
                     alignItems: "center",
                     alignSelf: "center",
-                    paddingVertical: 10,
+                    paddingVertical: 12,
                 },
             ]}
         >
@@ -29,9 +29,6 @@ export const AppInfo: React.FC<AppInfoProps> = ({ textColor = colors.secondaryCo
                 <Text variant="bodySmall" style={{ color: textColor, fontWeight: 400, textAlign: "center" }}>
                     {`v${constants.expoConfig?.version} © ${currentYear} | ConectPec . Todos os direitos reservados \n Designed and powered by BOZ`}
                 </Text>
-                {/* <Text variant="bodySmall" style={{ color: textColor }}>
-                    Designed and powered by BOZ
-                </Text> */}
             </View>
         </View>
     )
