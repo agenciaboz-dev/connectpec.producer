@@ -35,6 +35,7 @@ export const colors = {
 
     surfaceDIM: "#E5D8CC",
     surface: "#FFFFFF",
+    surfaceVariant: "#ECE4E0D9",
     surfaceBright: "#FFF8F4",
     surfaceContainerLowest: "#FFFFFF",
     surfaceContainerLow: "#FFF1E5",
@@ -44,6 +45,7 @@ export const colors = {
     onSurface: "#1C1B1B",
     onSurfaceVariant: "#504539",
     outline: "#827568",
+    darkOutline: "#F2EBE0",
     outlineVariant: "#D4C4B5",
 
     inverseSurface: "#34302C",

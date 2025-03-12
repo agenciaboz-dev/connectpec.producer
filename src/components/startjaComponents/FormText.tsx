@@ -30,6 +30,7 @@ export interface FormTextProps extends TextInputProps {
     forced_error?: string
     innerLabel?: boolean
     password?: boolean
+    inputType?: number
 }
 
 export const FormText = React.forwardRef<React.ElementRef<typeof OriginalInput>, FormTextProps>((props, ref) => {
@@ -57,7 +58,6 @@ export const FormText = React.forwardRef<React.ElementRef<typeof OriginalInput>,
                     <TextInput
                         ref={ref}
                         {...props}
-                        // right={props.right ? error ? <TextInput.Icon icon={"alert-circle"} color={theme.colors.error} /> : props.right : undefined}
                         right={
                             props.right ? (
                                 props.right
@@ -74,15 +74,23 @@ export const FormText = React.forwardRef<React.ElementRef<typeof OriginalInput>,
                         label={props.innerLabel ? (props.required ? `${props.label} *` : props.label || "") : undefined}
                         mode="outlined"
                         style={[
-                            { backgroundColor: "transparent", flexShrink: 0, fontSize: scale(14) },
+                            {
+                                backgroundColor:
+                                    props.inputType === 1 ? colors.surfaceVariant : props.inputType === 2 ? "transparent" : "transparent",
+                                flexShrink: 0,
+                                fontSize: scale(14),
+                            },
                             props.multiline && !props.innerLabel && { paddingVertical: scale(10) },
                             props.style,
                         ]}
-                        outlineStyle={{
-                            borderRadius: 5,
-                            borderColor: error ? theme.colors.error : undefined,
-                        }}
-                        dense
+                        outlineColor={props.inputType === 1 ? colors.darkOutline : props.inputType === 2 ? colors.primary : props.outlineColor}
+                        outlineStyle={[
+                            {
+                                borderRadius: 12,
+                                borderColor: error ? theme.colors.error : undefined,
+                            },
+                            props.outlineStyle,
+                        ]}
                         returnKeyType={props.returnKeyType || "next"}
                         error={error}
                         value={
