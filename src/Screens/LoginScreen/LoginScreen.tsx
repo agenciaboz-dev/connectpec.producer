@@ -7,11 +7,13 @@ import { Image } from "expo-image"
 import { Button, Text } from "react-native-paper"
 import { colors } from "../../style/colors"
 import { AppInfo } from "../../components/startjaComponents/AppInfo"
+import { LoginComponent } from "./LoginComponent"
 
 interface HomeProps {}
 
 export const Home: React.FC<HomeProps> = ({}) => {
     const navigation = useNavigation<NativeStackNavigationProp<HomeStackParams>>()
+    
     return (
         <View style={{ flex: 1 }}>
             <Image
@@ -31,7 +33,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
                     </Button>
                 </View>
                 <View style={{ flexDirection: "row", gap: 207 }}>
-                    <View style={{ flex: 1, gap: 20, borderColor: "#ff0000", borderWidth: 1 }}>
+                    <View style={{ flex: 1, gap: 20 }}>
                         <Image
                             source={require("../../../assets/logo_text_white.png")}
                             style={{
@@ -43,7 +45,9 @@ export const Home: React.FC<HomeProps> = ({}) => {
                             Acesse aqui a Central do Produtor com suas credenciais para gerenciar seu Negócio.
                         </Text>
                     </View>
-                    <View style={{ flex: 1, borderColor: "#ff0000", borderWidth: 1 }}>{/* <LoginComponent /> */}</View>
+                    <View style={{ flex: 1 }}>
+                        <LoginComponent />
+                    </View>
                 </View>
                 <AppInfo />
             </View>

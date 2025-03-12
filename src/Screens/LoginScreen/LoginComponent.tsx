@@ -32,47 +32,18 @@ export const LoginComponent: React.FC<LoginComponentProps> = () => {
 
     return (
         <View style={{ gap: 40 }}>
-            <FormText
-                formik={formik}
-                label={"cpf"}
-                // innerLabel
-                //
-                name="login"
-                placeholder="CPF"
-                onSubmitEditing={() => password_ref.current?.focus()}
-                style={{
-                    backgroundColor: "#ECE4E0D9",
-                }}
-            />
+            <FormText formik={formik} name="login" placeholder="CPF" onSubmitEditing={() => password_ref.current?.focus()} inputType={1} />
             <FormText
                 ref={password_ref}
                 formik={formik}
-                //
                 name="password"
                 placeholder="Senha"
                 password
                 onSubmitEditing={() => formik.handleSubmit()}
-                style={{
-                    backgroundColor: "#ECE4E0D9",
-                    borderRadius: 12,
-                }}
+                inputType={1}
             />
-            {/* <TextInput
-            label={"blabla"}
-            mode="outlined"
-            style={{
-            paddingHorizontal: 16,
-            borderColor: "#ff0000",
-            borderWidth: 1,
-            }}
-            contentStyle={{
-            paddingHorizontal: 16,
-            borderColor: "#ff0000",
-            borderWidth: 1,
-            }}
-            /> */}
-            <PecButton onPress={() => {}} text="Continuar" />
-            <PecButton onPress={() => {}} text="Cadastre-se" />
+            <PecButton buttonType={1} onPress={() => {}} text="Continuar" />
+            <PecButton buttonType={2} onPress={() => {}} text="Cadastre-se" />
         </View>
     )
 }
